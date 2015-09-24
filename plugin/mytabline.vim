@@ -7,6 +7,9 @@ function! MyTabLine()
   let s = '' " complete tabline goes here
   " loop through each tab page
   for t in range(tabpagenr('$'))
+    if t > 0
+      let s.= '|||' " tabs separator
+    endif
     " select the highlighting for the buffer names
     if t + 1 == tabpagenr()
       let s .= '%#TabLineSel#'
