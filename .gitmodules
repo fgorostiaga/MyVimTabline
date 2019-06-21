@@ -1,0 +1,4 @@
+[submodule "nweb"]
+	path = nweb
+	url = https://github.com/fgorostiaga/nweb
+	branch = master
